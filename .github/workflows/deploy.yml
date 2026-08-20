@@ -20,19 +20,17 @@ jobs:
     steps:
       - name: Baixar código
         uses: actions/checkout@v4
-      - name: Preparar pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
       - name: Preparar Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
+          cache: npm
       - name: Instalar dependências
-        run: pnpm install --frozen-lockfile
+        run: npm install
       - name: Gerar app
-        run: pnpm build
+        run: npm run build
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Enviar artefato
         uses: actions/upload-pages-artifact@v3
         with:
