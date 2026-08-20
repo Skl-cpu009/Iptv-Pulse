@@ -1,0 +1,19 @@
+{
+  "name": "IPTV Pulse — Diagnóstico de internet",
+  "short_name": "IPTV Pulse",
+  "description": "Teste de qualidade de internet voltado para IPTV e streaming ao vivo.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#070b16",
+  "theme_color": "#070b16",
+  "icons": [
+    {
+      "src": "./icons/iptv-pulse.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
